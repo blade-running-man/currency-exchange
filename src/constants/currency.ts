@@ -1,0 +1,2 @@
+export const DEFAULT_SOURCE_CURRENCY = 'EUR';
+export const DEFAULT_TARGET_CURRENCY = 'USD';

@@ -1,0 +1,12 @@
+.storybook
+.vscode
+cypress
+dist
+node_modules
+patches
+playwright
+playwright-report
+pnpm-lock.yaml
+pnpm-workspace.yaml
+tsconfig.json
+/src/hooks/useSupportedCurrencies/useSupportedCurrencies.ts
