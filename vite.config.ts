@@ -10,4 +10,5 @@ export default defineConfig({
       '@': resolve('src'),
     },
   },
+  base: '/currency-exchange/',
 });
