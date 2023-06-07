@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ExchangeHistoryProvider } from '@/context/ExchangeHistoryContext';
@@ -56,14 +56,14 @@ const theme = createTheme({
 function AppShell({ children }: AppShellProps) {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <HashRouter>
         <ExchangeHistoryProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
             {children}
           </ThemeProvider>
         </ExchangeHistoryProvider>
-      </BrowserRouter>
+      </HashRouter>
     </QueryClientProvider>
   );
 }
